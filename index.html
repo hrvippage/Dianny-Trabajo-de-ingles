@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Presente y Pasado Continuo - Inglés Bonito</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="hojas de estilos/estilo.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <ul class="menu" id="menu">
+      <li><a href="paginas/inicio.html">Inicio</a></li>
+      <li class="submenu">
+        <a href="#">Presente Continuo ▾</a>
+        <ul class="submenu-items">
+          <li><a href="paginas/que-es.html"> ¿Qué es?</a></li>
+          <li><a href="paginas/estru.html"> Estructura</a></li>
+          <li><a href="paginas/resumen.html"> Resumen</a></li>
+        </ul>
+      </li>
+      <li><a href="paginas/juego_presente_continuo.html">Juega Para Probar lo haz Aprendido</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <br /><br /><br /><br />
+    <header style="background-color: #fce4ec; padding: 15px 0;">
+      <h1 style="color: #ba68c8; text-align: center; margin: 0;">
+        ¡ Aprende Inglés Rápido y Fácil !
+      </h1>
+    </header>
+    <br /><br />
+    <center>
+      <img src="imagenes/k.jpg" alt="Banner del presente continuo" style="width: 110%; max-height: 250px; object-fit: cover; border-bottom: 5px solid #ba68c8;" />
+    </center>
+    <br /><br />
+    <div class="botones-secciones">
+      <a href="paginas/intro.html" class="boton-seccion">Introducción</a>
+      <a href="paginas/formacion.html" class="boton-seccion">¿Cómo se forma?</a>
+      <a href="paginas/verbo-to-be.html" class="boton-seccion">Verbo to be</a>
+      <a href="paginas/preguntas.html" class="boton-seccion">¿Cómo se hacen preguntas?</a>
+      <a href="paginas/tips.html" class="boton-seccion">Tips rápidos</a>
+      <a href="paginas/forma-positiva.html" class="boton-seccion">Forma Positiva</a>
+      <a href="paginas/forma-negativa.html" class="boton-seccion">Forma Negativa</a>
+      <a href="paginas/Forma -Interrogativa.html" class="boton-seccion">Forma Interrogativa</a>
+      <a href="video/video.html" class="boton-seccion">Mira Este video</a>
+    </div>
+    <section id="pasado-continuo" style="margin-top: 50px; background-color: #fce4ec; border: 2px solid #ba68c8; border-radius: 8px; padding: 20px;">
+      <h2 style="color: #ba68c8;">Pasado Continuo</h2>
+      <p>
+        El pasado continuo se usa para describir acciones que estaban ocurriendo en un momento específico del pasado. Se forma con el verbo <strong>to be</strong> en pasado (<em>was/were</em>) + verbo en -ing.
+      </p>
+      <ul>
+        <li><strong>Estructura:</strong> Sujeto + was/were + verbo con terminación -ing</li>
+        <li><strong>Ejemplo:</strong> <em>I was studying when you called.</em> (Yo estaba estudiando cuando llamaste)</li>
+        <li><strong>Usos:</strong> acciones en progreso en el pasado, interrupciones, y descripciones de escenas pasadas.</li>
+      </ul>
+    </section>
+  </main>
+
+  <br /><br /><br /><br /><br /><br /><br /><br /><br />
+  <footer id="contacto" style="text-align: center;">
+    <p>© 2025 Inglés Bonito. Todos los derechos reservados.</p>
+    <button onclick="scrollToTop()">⬆️ Volver arriba</button>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('menu');
+      menu.classList.toggle('active');
+    }
+
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
